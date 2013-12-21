@@ -3,6 +3,8 @@
     "pass": "test",
     "database": "test",
 
+    "template": "/path/to/my/template/file",
+
     "header": "This is global header.\nHeader next line.",
     "footer": "This is global footer.\nFooter next line.",
 
