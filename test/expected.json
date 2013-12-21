@@ -60,7 +60,7 @@
                     "REFERENCED_TABLE_NAME": "folder",
                     "REFERENCED_COLUMN_NAME": "id"
                 }
-            ],
+            ]
         }
     },
     "parser": {
