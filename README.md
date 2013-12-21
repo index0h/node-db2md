@@ -68,7 +68,9 @@ This example was rendered with configuration.
 ### DB Connection params
 
 **user** - db user name, default: null.
+
 **pass** - db user password, default: null.
+
 **database** [required] - db name.
 
 ```json
@@ -89,6 +91,7 @@ This example was rendered with configuration.
 ### Tables directive (optional)
 
 **tables** is a JSON object where **key** - name of table in db and **value** - options for this table.
+
 **header** and **footer** - markdown strings that will be placed at beginning (after table name) and at the and of table output.
 
 ```json
@@ -105,7 +108,9 @@ This example was rendered with configuration.
 Groups designed to output logically related tables.
 
 **groups** - array of objects with **tables** directive.
+
 **groups[].header** and **groups[].footer** - markdown strings that will be placed at beginning and at the and of group output.
+
 **tables** [required] - see **Tables directive**.
 
 
