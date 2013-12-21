@@ -10,26 +10,27 @@
 
     "tables": {
         "first_table": {
-            "comment": "First table comment.",
+            "header": "First table comment.",
             "footer": "First table footer."
         },
         "second_table": {
-            "comment": "Second table comment.",
+            "header": "Second table comment.",
             "footer": "Second table footer."
         }
     },
 
     "groups": [
         {
+            "name": "This is first table group",
             "header": "This is group header.\nHeader next line.",
             "footer": "This is group footer.\nFooter next line.",
             "tables": {
                 "third_table": {
-                    "comment": "Third table comment.",
+                    "header": "Third table comment.",
                     "footer": "Third table footer."
                 },
                 "fourth_table": {
-                    "comment": "Fourth table comment.",
+                    "header": "Fourth table comment.",
                     "footer": "Fourth table footer."
                 }
             }
