@@ -1,0 +1,4 @@
+.idea
+lib-cov
+node_modules
+coverage.html

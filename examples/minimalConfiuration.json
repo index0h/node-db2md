@@ -1,0 +1,7 @@
+{
+    "user": "user",
+    "database": "test",
+    "tables": {
+        "my_table": {}
+    }
+}

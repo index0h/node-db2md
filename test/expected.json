@@ -1,0 +1,111 @@
+{
+    "loader": {
+        "folder": {
+            "tableComment": [
+                {
+                    "TABLE_COMMENT": "List of folders."
+                }
+            ],
+            "foreignKeys": [
+                {
+                    "COLUMN_NAME": "id",
+                    "CONSTRAINT_NAME": "PRIMARY",
+                    "REFERENCED_TABLE_NAME": null,
+                    "REFERENCED_COLUMN_NAME": null
+                },
+                {
+                    "COLUMN_NAME": "parentId",
+                    "CONSTRAINT_NAME": "PRIMARY",
+                    "REFERENCED_TABLE_NAME": null,
+                    "REFERENCED_COLUMN_NAME": null
+                },
+                {
+                    "COLUMN_NAME": "parentId",
+                    "CONSTRAINT_NAME": "FKFolderToFolder",
+                    "REFERENCED_TABLE_NAME": "folder",
+                    "REFERENCED_COLUMN_NAME": "id"
+                }
+            ],
+            "columns": [
+                {
+                    "Field": "id",
+                    "Type": "int(10) unsigned",
+                    "Collation": null,
+                    "Null": "NO",
+                    "Key": "PRI",
+                    "Default": null,
+                    "Extra": "auto_increment",
+                    "Privileges": "select,insert,update,references",
+                    "Comment": "ID."
+                },
+                {
+                    "Field": "parentId",
+                    "Type": "int(10) unsigned",
+                    "Collation": null,
+                    "Null": "NO",
+                    "Key": "PRI",
+                    "Default": "0",
+                    "Extra": "",
+                    "Privileges": "select,insert,update,references",
+                    "Comment": "Link to parent folder."
+                },
+                {
+                    "Field": "name",
+                    "Type": "varchar(255)",
+                    "Collation": "utf8_general_ci",
+                    "Null": "NO",
+                    "Key": "",
+                    "Default": null,
+                    "Extra": "",
+                    "Privileges": "select,insert,update,references",
+                    "Comment": "Name of folder."
+                }
+            ]
+        }
+    },
+    "parser": {
+        "columns": {
+            "id": {
+                "field": "id",
+                "type": "int(10) unsigned",
+                "collation": "",
+                "null": "",
+                "default": "",
+                "extra": [ "auto_increment" ],
+                "key": "",
+                "comment": "ID."
+            },
+            "parentId": {
+                "field": "parentId",
+                "type": "int(10) unsigned",
+                "collation": "",
+                "null": "",
+                "default": "0",
+                "extra": [ "" ],
+                "key": "",
+                "comment": "Link to parent folder."
+            },
+            "name": {
+                "field": "name",
+                "type": "varchar(255)",
+                "collation": "utf8_general_ci",
+                "null": "",
+                "default": "",
+                "extra": [ "" ],
+                "key": "",
+                "comment": "Name of folder."
+            }
+        },
+        "foreignKeys": {
+            "id": {
+                "key": "PRIMARY"
+            },
+            "parentId": {
+                "key": "FKFolderToFolder",
+                "extra": [ "->folder" ]
+            }
+        },
+        "comment": "List of folders.",
+        "table": "\n| field    | type             | collation       | null | default | key              | extra          | comment                |\n|----------|------------------|-----------------|------|---------|------------------|----------------|------------------------|\n| id       | int(10) unsigned |                 |      |         | PRIMARY          | auto_increment | ID.                    |\n| parentId | int(10) unsigned |                 |      | 0       | FKFolderToFolder |  ->folder      | Link to parent folder. |\n| name     | varchar(255)     | utf8_general_ci |      |         |                  |                | Name of folder.        |\n"
+    }
+}
