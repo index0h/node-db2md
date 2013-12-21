@@ -1,7 +1,7 @@
 {
     "name": "docMyDB",
+    "description": "Markdown documentation generator of DB structure",
     "version": "0.0.1",
-    "repository": "git://github.com/index0h/node-docMyDB",
     "author": "Roman Levishchenko <index.0h@gmail.com>",
     "license": "MIT",
     "contributors": [
@@ -10,6 +10,10 @@
             "email": "index.0h@gmail.com"
         }
     ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/index0h/node-docMyDB.git"
+    },
     "keywords": [
         "documentation",
         "markdwon",
