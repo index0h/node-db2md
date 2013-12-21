@@ -1,31 +1,6 @@
 {
     "loader": {
         "folder": {
-            "tableComment": [
-                {
-                    "TABLE_COMMENT": "List of folders."
-                }
-            ],
-            "foreignKeys": [
-                {
-                    "COLUMN_NAME": "id",
-                    "CONSTRAINT_NAME": "PRIMARY",
-                    "REFERENCED_TABLE_NAME": null,
-                    "REFERENCED_COLUMN_NAME": null
-                },
-                {
-                    "COLUMN_NAME": "parentId",
-                    "CONSTRAINT_NAME": "PRIMARY",
-                    "REFERENCED_TABLE_NAME": null,
-                    "REFERENCED_COLUMN_NAME": null
-                },
-                {
-                    "COLUMN_NAME": "parentId",
-                    "CONSTRAINT_NAME": "FKFolderToFolder",
-                    "REFERENCED_TABLE_NAME": "folder",
-                    "REFERENCED_COLUMN_NAME": "id"
-                }
-            ],
             "columns": [
                 {
                     "Field": "id",
@@ -60,7 +35,32 @@
                     "Privileges": "select,insert,update,references",
                     "Comment": "Name of folder."
                 }
-            ]
+            ],
+            "tableComment": [
+                {
+                    "TABLE_COMMENT": "List of folders."
+                }
+            ],
+            "foreignKeys": [
+                {
+                    "COLUMN_NAME": "id",
+                    "CONSTRAINT_NAME": "PRIMARY",
+                    "REFERENCED_TABLE_NAME": null,
+                    "REFERENCED_COLUMN_NAME": null
+                },
+                {
+                    "COLUMN_NAME": "parentId",
+                    "CONSTRAINT_NAME": "PRIMARY",
+                    "REFERENCED_TABLE_NAME": null,
+                    "REFERENCED_COLUMN_NAME": null
+                },
+                {
+                    "COLUMN_NAME": "parentId",
+                    "CONSTRAINT_NAME": "FKFolderToFolder",
+                    "REFERENCED_TABLE_NAME": "folder",
+                    "REFERENCED_COLUMN_NAME": "id"
+                }
+            ],
         }
     },
     "parser": {
