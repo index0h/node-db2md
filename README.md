@@ -8,10 +8,12 @@ It could be useful if you use github wiki / gitlab wiki / gollum or any other wi
 
 # First step
 
-* Install from NPM
+* Install from repository
 
 ```sh
-npm install docMyDB -g
+git clone git@github.com:index0h/node-docMyDB.git
+cd node-docMyDB
+npm install -g
 ```
 
 * Create configuration file [docMyDB.json](https://github.com/index0h/node-docMyDB/blob/master/examples/minimalConfiguration.json)
