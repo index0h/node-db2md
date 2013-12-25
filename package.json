@@ -1,18 +1,15 @@
 {
-    "name": "docMyDB",
+    "name": "db2md",
     "description": "Markdown documentation generator of DB structure",
     "version": "0.0.1",
     "author": "Roman Levishchenko <index.0h@gmail.com>",
     "license": "MIT",
     "contributors": [
-        {
-            "name": "Roman Levishchenko",
-            "email": "index.0h@gmail.com"
-        }
+        "Roman Levishchenko <index.0h@gmail.com>"
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/index0h/node-docMyDB.git"
+        "url": "git://github.com/index0h/node-db2md.git"
     },
     "keywords": [
         "documentation",
@@ -41,9 +38,17 @@
         "node": ">= 0.10.x"
     },
     "bin": {
-        "docMyDB": "./bin/docMyDB.js"
+        "db2md": "./bin/db2md.js"
     },
     "scripts": {
         "test": "make test"
+    },
+    "bugs": {
+        "url": "https://github.com/index0h/node-db2md/issues"
+    },
+    "homepage": "https://github.com/index0h/node-db2md",
+    "directories": {
+        "example": "examples",
+        "test": "test"
     }
 }

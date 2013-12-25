@@ -6,7 +6,7 @@ var assert = require("assert"),
     loader = new Loader({
         user: "travis",
         pass: null,
-        database: "docMyDB"
+        database: "db2md"
     });
 
 describe("loader", function () {
