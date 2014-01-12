@@ -1,7 +1,7 @@
 node-db2md
 ============
 
-[![Build Status](https://travis-ci.org/index0h/node-db2md.png?branch=master)](https://travis-ci.org/index0h/node-db2md) [![Dependency Status](https://gemnasium.com/index0h/node-db2md.png)](https://gemnasium.com/index0h/node-db2md)
+[![Build Status](https://travis-ci.org/index0h/node-db2md.png?branch=master)](https://travis-ci.org/index0h/node-db2md) [![Dependency Status](https://gemnasium.com/index0h/node-db2md.png)](https://gemnasium.com/index0h/node-db2md) [![Coverage Status](https://coveralls.io/repos/index0h/node-db2md/badge.png?branch=master)](https://coveralls.io/r/index0h/node-db2md?branch=master)
 
 db2md is a tool for generation documentation of your DB structure in markdown.
 It could be useful if you use github wiki / gitlab wiki / gollum or any other wiki system that supports markdown syntax.
