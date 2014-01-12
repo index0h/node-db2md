@@ -1,13 +1,11 @@
 
-REPORTER=dot
-
 test: test-unit
 
 test-unit:
-	@NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter $(REPORTER)
+	@NODE_ENV=test ./node_modules/.bin/mocha --ui bdd test
 
-test-cov: clean lib-cov
-	@DOC_MY_DB_COVERAGE=1 $(MAKE) test-unit REPORTER=html-cov > coverage.html
+test-cov: lib-cov
+	@DB2MD_COVERAGE=1 ./node_modules/.bin/mocha -R mocha-lcov-reporter lib-cov | ./node_modules/coveralls/bin/coveralls.js && rm -rf lib-cov
 
 lib-cov:
 	@NODE_ENV=test ./node_modules/.bin/jscoverage --exclude "Makefile" lib lib-cov
@@ -15,8 +13,4 @@ lib-cov:
 code-style:
 	@NODE_ENV=test ./node_modules/.bin/jshint bin lib test index.js
 
-clean:
-	rm -f coverage.html
-	rm -fr lib-cov
-
-.PHONY: test test-unit test-cov lib-cov clean
+.PHONY: test test-unit test-cov lib-cov

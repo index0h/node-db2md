@@ -1,1 +1,1 @@
-module.exports = require(__dirname + "/lib" + ((process.env.DOC_MY_DB_COVERAGE === "1") ? "-cov" : "") + "main");
+module.exports = require(__dirname + "/lib" + ((process.env.DB2MD_COVERAGE === "1") ? "-cov" : "") + "main");
