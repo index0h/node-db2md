@@ -9,3 +9,5 @@ node_js:
 before_script:
   - mysql -e "CREATE DATABASE db2md CHARACTER SET utf8 COLLATE utf8_general_ci;"
   - mysql -e "CREATE TABLE IF NOT EXISTS db2md.folder(id INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'ID.', parentId INT UNSIGNED NULL COMMENT 'Link to parent folder.', name VARCHAR(255) NOT NULL COMMENT 'Name of folder.', PRIMARY KEY (id, parentId), INDEX FKFolderToFolder (parentId ASC), CONSTRAINT FKFolderToFolder FOREIGN KEY (parentId) REFERENCES db2md.folder (id)  ON DELETE NO ACTION  ON UPDATE NO ACTION) ENGINE = InnoDB COMMENT = 'List of folders.';"
+
+script: make test-cov
