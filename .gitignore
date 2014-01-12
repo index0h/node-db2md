@@ -1,4 +1,3 @@
 .idea
 lib-cov
 node_modules
-.coveralls.yml
