@@ -1,11 +1,12 @@
 {
     "name": "db2md",
     "description": "Markdown documentation generator of DB structure",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Roman Levishchenko <index.0h@gmail.com>",
     "license": "MIT",
     "contributors": [
-        "Roman Levishchenko <index.0h@gmail.com>"
+        "Roman Levishchenko <index.0h@gmail.com>",
+        "Vladimir Avetisian <vladavmail@gmail.com>"
     ],
     "repository": {
         "type": "git",
@@ -22,16 +23,16 @@
     "dependencies": {
         "async": "0.2.9",
         "commander": "2.1.0",
-        "sequelize": "2.0.0-beta.2",
-        "mysql": "2.0.0-rc2",
+        "sequelize": "2.0.0-dev1",
+        "mysql": "2.0.0",
         "underscore": "1.5.2",
         "cli-table": "0.2.0",
         "deepmerge": "0.2.7"
     },
     "devDependencies": {
-        "mocha": "1.16.0",
+        "mocha": "1.17.0",
         "jscoverage": "0.3.8",
-        "jshint": "2.3.0",
+        "jshint": "2.4.1",
         "should": "2.1.1"
     },
     "engines": {
