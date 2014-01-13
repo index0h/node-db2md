@@ -3,7 +3,7 @@ require("should");
 var assert = require("assert"),
     expected = require(__dirname + "/expected.json"),
     loader = {data: expected.loader},
-    Parser = require(__dirname + "/../lib" + ((process.env.DOC_MY_DB_COVERAGE === "1") ? "-cov" : "") + "/parser"),
+    Parser = require(__dirname + "/../lib" + ((process.env.DB2MD_COVERAGE === "1") ? "-cov" : "") + "/parser"),
     parser = new Parser(loader);
 
 expected = expected.parser;

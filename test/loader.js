@@ -2,7 +2,7 @@ require("should");
 
 var assert = require("assert"),
     expected = require(__dirname + "/expected.json").loader,
-    Loader = require(__dirname + "/../lib" + ((process.env.DOC_MY_DB_COVERAGE === "1") ? "-cov" : "") + "/loader"),
+    Loader = require(__dirname + "/../lib" + ((process.env.DB2MD_COVERAGE === "1") ? "-cov" : "") + "/loader"),
     loader = new Loader({
         user: "travis",
         pass: null,
