@@ -1,7 +1,10 @@
 <%= header %>
 
 <% _.each(tables, function (table, tableName) { %>
-## <%= tableName %>. _<%= table.comment %>_
+
+## <%= tableName %>
+
+Comment: <%= table.comment %>
 
 <%= table.header %>
 
@@ -12,12 +15,16 @@
 <% }) %>
 
 <% _.each(groups, function (group) { %>
+
 # <%= group.name %>
 
 <%= group.comment %>
 
 <% _.each(group.tables, function (table, tableName) { %>
-## **<%= tableName %>**. <%= table.comment %>
+
+## **<%= tableName %>**
+
+**Comment: <%= table.comment %>**
 
 <%= table.header %>
 
