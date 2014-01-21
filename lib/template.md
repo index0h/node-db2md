@@ -22,9 +22,9 @@ Comment: <%= table.comment %>
 
 <% _.each(group.tables, function (table, tableName) { %>
 
-## **<%= tableName %>**
+## <%= tableName %>
 
-**Comment: <%= table.comment %>**
+Comment: <%= table.comment %>
 
 <%= table.header %>
 
