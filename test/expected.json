@@ -101,11 +101,10 @@
                 "key": "PRIMARY"
             },
             "parentId": {
-                "key": "FKFolderToFolder",
-                "extra": [ "->folder" ]
+                "key": "FKFolderToFolder->folder"
             }
         },
         "comment": "List of folders.",
-        "table": "\n| field    | type             | collation       | null | default | key              | extra          | comment                |\n|----------|------------------|-----------------|------|---------|------------------|----------------|------------------------|\n| id       | int(10) unsigned |                 |      |         | PRIMARY          | auto_increment | ID.                    |\n| parentId | int(10) unsigned |                 |      | 0       | FKFolderToFolder |  ->folder      | Link to parent folder. |\n| name     | varchar(255)     | utf8_general_ci |      |         |                  |                | Name of folder.        |\n"
+        "table": "\n| field    | type             | key                      | extra          | null | default | collation       | comment                |\n|----------|------------------|--------------------------|----------------|------|---------|-----------------|------------------------|\n| id       | int(10) unsigned | PRIMARY                  | auto_increment |      |         |                 | ID.                    |\n| parentId | int(10) unsigned | FKFolderToFolder->folder |                |      | 0       |                 | Link to parent folder. |\n| name     | varchar(255)     |                          |                |      |         | utf8_general_ci | Name of folder.        |\n"
     }
 }
