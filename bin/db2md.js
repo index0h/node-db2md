@@ -36,4 +36,5 @@ main.run(function (errors, data) {
             }
         });
     }
+    main.loader.db.end();
 });
